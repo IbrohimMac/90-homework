@@ -1,7 +1,9 @@
-export default function Home() {
+import React from "react";
+
+const Contact = () => {
   return (
     <div style={{ textAlign: "center" }}>
-      <h1>Home Page</h1>
+      <h1>Contact Page</h1>
 
       <p style={{ marginTop: "30px" }}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
@@ -11,4 +13,6 @@ export default function Home() {
       </p>
     </div>
   );
-}
+};
+
+export default Contact;
