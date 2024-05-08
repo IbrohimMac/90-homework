@@ -16,8 +16,8 @@ header {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
   z-index: 1;
   background-color: white;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 68px;
+  padding-right: 68px;
   nav {
     display: flex;
     justify-content: space-between;
@@ -55,19 +55,20 @@ main {
   .mainFIrst {
     margin: 15px;
     margin-top: 100px;
-    padding-right: 30px;
+    padding-right: 130px;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
     .search {
-      width: 480px;
+      width: 400px;
+      height: 56px;
       box-shadow: 0 0 5px #ccc;
       position: relative;
       border-radius: 8px;
       overflow: hidden;
-      margin-left: 22px;
+      margin-left: 112px;
       input {
         width: 100%;
         padding: 15px;
@@ -76,67 +77,24 @@ main {
         font-size: 22px;
       }
     }
-    //////// FILTER .////////////
-    .BigDrop {
+    //////// FILTER .////////////////////////////////////////////
+    .Regions {
       width: 200px;
-      // position: relative;
-      .miniDrop {
-        width: 200px;
-        padding: 17px 14px;
-        border-radius: 8px;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-        display: flex;
-        justify-content: space-between;
-        cursor: pointer;
-        font-size: 16px;
-        //   margin-left: -22px;
-        p {
-          font-family: sans-serif;
-          margin-top: 3px;
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 20px;
-          letter-spacing: 0px;
-        }
-        i {
-          cursor: pointer;
-        }
-      }
-
-      .drop-p {
-        font-family: sans-serif;
-        font-size: 16px;
-        position: absolute;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-        top: 70px;
-        padding: 20px 14px;
-        width: 100%;
-        border-radius: 8px;
-        background-color: white;
-        cursor: pointer;
-        padding-left: 20px;
-      }
-
-      .region:hover {
-        // background-color: #202c36;
-        color: #4f5960;
-        font-size: 17px;
-        transition: 0.4s;
-      }
+      height: 56px;
+      box-shadow: 0px 2px 9px 0px #0000000e;
+      border-radius: 8px;
+      overflow: hidden;
+      border: none;
+      padding-left: 10px;
     }
-    .miniDrop:hover {
-      background-color: rgb(226, 225, 225);
-      transition: 0.5s;
-    }
-    .dropped {
-      display: none;
-    }
+    ////////////////////////////////////////////////////////////
   }
   .mainSecond {
     .flags {
       display: flex;
       gap: 75px;
       flex-wrap: wrap;
+      justify-content: center;
       .flags-1 {
         box-shadow: 0px 0px 7px 2px #00000008;
         width: 264px;

@@ -1,14 +1,8 @@
 import React from "react";
 import "../../sass/style.css";
 import Image from "next/image";
-import i1 from "../../../public/Germany.png";
-// import i2 from "../../../public/Usa.png";
-// import i3 from "../../../public/Brazil.png";
-// import i4 from "../../../public/Iceland.png";
-// import i5 from "../../../public/Afganistan.png";
-// import i6 from "../../../public/Aland.png";
-// import i7 from "../../../public/Albania.png";
-// import i8 from "../../../public/Algeria.png";
+import Link from "next/link";
+
 const Country = () => {
   return (
     <div>
@@ -16,55 +10,69 @@ const Country = () => {
         <section>
           <div className="mainFIrst">
             <div className="search">
-              <input class="searchIn" type="text" placeholder="Search ..." />
+              <input
+                className="searchIn"
+                type="text"
+                placeholder="Search ..."
+              />
             </div>
-            <div class="BigDrop">
-              <div class="miniDrop">
+            <div className="BigDrop">
+              {/* <div className="miniDrop">
                 <p>Filter Region</p>
               </div>
-              <div class="drop-p dropped">
-                <p id="regg" class="region">
+              <div className="drop-p dropped">
+                <p id="regg" className="region">
                   All
                 </p>
                 <br />
-                <p id="regg" class="region">
+                <p id="regg" className="region">
                   Africa
                 </p>
                 <br />
-                <p id="regg" class="region">
+                <p id="regg" className="region">
                   America
                 </p>
                 <br />
-                <p id="regg" class="region">
+                <p id="regg" className="region">
                   Asia
                 </p>
                 <br />
-                <p id="regg" class="region">
+                <p id="regg" className="region">
                   Europe
                 </p>
                 <br />
-                <p id="regg" class="region">
+                <p id="regg" className="region">
                   Oceania
                 </p>
-              </div>
+              </div> */}
+              <select className="Regions">
+                <option value="Filter by Region">Filter by Region</option>
+                <option value="Africa">Africa</option>
+                <option value="America">America</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Oceania">Oceania</option>
+              </select>
             </div>
           </div>
         </section>
         <section className="container">
           <div className="mainSecond">
             <div className="flags">
-              <div className="flags-1">
-                <Image
-                  src="/Germany.png"
-                  width={267}
-                  height={160}
-                  alt="Germany"
-                />
-                <h2>Germany</h2>
-                <p>Population: 81,770,900</p>
-                <p>Region: Europe</p>
-                <p>Capital: Berlin</p>
-              </div>
+              <Link href="/countries">
+                <div className="flags-1">
+                  <Image
+                    src="/Germany.png"
+                    width={267}
+                    height={160}
+                    alt="Germany"
+                  />
+                  <h2>Germany</h2>
+                  <p>Population: 81,770,900</p>
+                  <p>Region: Europe</p>
+                  <p>Capital: Berlin</p>
+                </div>
+              </Link>
               <div className="flags-1">
                 <Image src="/Usa.png" width={267} height={160} alt="Usa" />
                 <h2>United States of America</h2>
