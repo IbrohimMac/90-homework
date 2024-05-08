@@ -4,7 +4,7 @@ import "../../sass/style.css";
 const Header = () => {
   return (
     <header>
-      <dixv className="container">
+      <div className="container">
         <nav>
           <h1>Where in the world?</h1>
           <div className="Links">
@@ -18,7 +18,7 @@ const Header = () => {
             <p class="dark-p">Dark Mode</p>
           </button>
         </nav>
-      </dixv>
+      </div>
     </header>
   );
 };
