@@ -14,8 +14,8 @@ const Header = () => {
             <Link href="/profile">Profile</Link>
             <Link href="/blog">Blog</Link>
           </div>
-          <button class="darkk">
-            <p class="dark-p">Dark Mode</p>
+          <button className="darkk">
+            <p className="dark-p">Dark Mode</p>
           </button>
         </nav>
       </div>
